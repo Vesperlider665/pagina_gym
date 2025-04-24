@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Fitness</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Barra de navegación principal">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gimnasio Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5501/ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header class="hero bg-primary text-white text-center py-5" role="banner">
+        <div class="container">
+            <h1 class="display">¡Bienvenido a Gimnasio Fitness!</h1>
+            <p class="lead">Transforma tu cuerpo, tu mente y tu vida</p>
+            <a href="#contacto" class="btn btn-light btn-lg" aria-label="Unirse al gimnasio">Únete ahora</a>
+        </div>
+    </header>
+
+    <!-- Carrusel de imágenes debajo del header -->
+    <section id="carrusel" class="py-5">
+        <div class="containerC">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" aria-label="Carrusel de imágenes del gimnasio">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/victor-freitas-Yuv-iwByVRQ-unsplash.jpg" class="d-block w-100" alt="Imagen de un entrenamiento en gimnasio con pesas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/risen-wang-20jX9b35r_M-unsplash.jpg" class="d-block w-100" alt="Entrenamiento en gimnasio con máquina de cardio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/danielle-cerullo-CQfNt66ttZM-unsplash.jpg" class="d-block w-100" alt="Gente ejercitándose en el gimnasio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Siguiente">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Productos para tu Entrenamiento</h2>
+            <div class="row text-center">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="imagenes/whey.jpeg" class="card-img-top" alt="Proteína en polvo" aria-label="Proteína Whey">
+                        <div class="card-body ">
+                            <h5 class="card-title">Proteína Whey</h5>
+                            <p class="card-text">Suplemento ideal para la recuperación muscular después del entrenamiento.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productoModal1" aria-label="Ver más sobre Proteína Whey">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="imagenes/barras.jpeg" class="card-img-top" alt="Barra energética" aria-label="Barra energética">
+                        <div class="card-body">
+                            <h5 class="card-title">Barra Energética</h5>
+                            <p class="card-text">Perfecta para un snack rápido antes o después de tu entrenamiento, sin azucar.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productoModal2" aria-label="Ver más sobre Barra Energética">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="imagenes/las-bebidas-isotonicas.webp" class="card-img-top" alt="Bebida isotónica" aria-label="Bebida isotónica">
+                        <div class="card-body">
+                            <h5 class="card-title">Bebida Isotónica</h5>
+                            <p class="card-text">Mantén tus niveles de hidratación durante y después de el entrenamiento.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productoModal3" aria-label="Ver más sobre Bebida Isotónica">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="imagenes/cratina.avif" class="card-img-top" alt="Creatina" aria-label="Creatina Monohidrato">
+                        <div class="card-body">
+                            <h5 class="card-title">Creatina Monohidrato</h5>
+                            <p class="card-text">Aumenta tu fuerza y potencia durante los entrenamientos intensos.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productoModal4" aria-label="Ver más sobre Creatina Monohidrato">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Sección de video -->
+
+ <video style=" width: 100%; align-items: center; " width="600" height="500px" controls>
+        <source src="imagenes/3209241-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        <source src="imagenes/3209241-uhd_3840_2160_25fps.mp4" type="video/ogg">
+
+         <!-- Subtítulos en español -->
+         <track src="subtitulos_es.vtt" kind="subtitles" srclang="es" label="Español" default>
+
+         <!-- Subtítulos en inglés -->
+         <track src="subtitulos_en.vtt" kind="subtitles" srclang="en" label="Inglés">
+
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+     <!-- Tabla -->
+    <section id="precios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Precios de Membresías</h2>
+    
+            <!-- Tabla de precios accesible -->
+            <table class="table table-bordered table-striped" aria-labelledby="tabla-precios">
+                <caption id="tabla-precios">Tabla de precios para las membresías del gimnasio</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tipo de Membresía</th>
+                        <th scope="col">Duración</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Beneficios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Básica</th>
+                        <td>Mensual</td>
+                        <td>$30</td>
+                        <td>Acceso a máquinas de cardio y pesas.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Premium</th>
+                        <td>Semestral</td>
+                        <td>$150</td>
+                        <td>Acceso completo, incluyendo clases grupales y asesoramiento personal.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">VIP</th>
+                        <td>Anual</td>
+                        <td>$250</td>
+                        <td>Acceso completo, clases grupales, asesoramiento personal y área de bienestar.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+<!-- Sección de Servicios -->
+<section id="servicios" class="py-5 bg-light" role="region" aria-labelledby="serviciosTitulo">
+    <div class="container">
+        <h2 id="serviciosTitulo" class="text-center mb-4">Servicios que Ofrecemos</h2>
+        <div class="row text-center">
+
+            <!-- Servicio 1 -->
+            <div class="col-md-3 mb-4" role="article" aria-labelledby="servicio1Titulo">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <!-- Icono de persona para representar entrenamiento personalizado -->
+                        <i class="bi bi-person-fill" style="font-size: 3rem; color: #007bff;" aria-hidden="true"></i>
+                        <h5 id="servicio1Titulo" class="card-title mt-3">Entrenamiento Personalizado</h5>
+                        <p class="card-text" aria-describedby="servicio1Descripcion">Entrenadores profesionales te guiarán hacia tus objetivos de manera personalizada y efectiva.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="col-md-3 mb-4" role="article" aria-labelledby="servicio2Titulo">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-heart" style="font-size: 3rem; color: #007bff;" aria-hidden="true"></i>
+                        <h5 id="servicio2Titulo" class="card-title mt-3">Cardio & Resistencia</h5>
+                        <p class="card-text" aria-describedby="servicio2Descripcion">Mejora tu resistencia cardiovascular con nuestros equipos y clases de alto rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="col-md-3 mb-4" role="article" aria-labelledby="servicio3Titulo">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-person-circle" style="font-size: 3rem; color: #007bff;" aria-hidden="true"></i>
+                        <h5 id="servicio3Titulo" class="card-title mt-3">Clases Grupales</h5>
+                        <p class="card-text" aria-describedby="servicio3Descripcion">Disfruta de clases grupales de yoga, pilates, y entrenamiento funcional para todos los niveles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="col-md-3 mb-4" role="article" aria-labelledby="servicio4Titulo">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-emoji-smile" style="font-size: 3rem; color: #007bff;" aria-hidden="true"></i>
+                        <h5 id="servicio4Titulo" class="card-title mt-3">Bienestar y Relax</h5>
+                        <p class="card-text" aria-describedby="servicio4Descripcion">Disfruta de masajes y terapias de relajación para recuperar energías después de tu entrenamiento.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form id="form-contacto" action="#" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+            <!-- Botones para cambiar el tamaño del texto -->
+            <button type="button" class="btn btn-secondary" onclick="changeFontSize('increase')" aria-label="Aumentar tamaño de texto">Aumentar Texto</button>
+            <button type="button" class="btn btn-secondary" onclick="changeFontSize('decrease')" aria-label="Disminuir tamaño de texto">Disminuir Texto</button>
+        </form>
+    </div>
+</section>
+
+    <button id="theme-toggle" aria-label="Cambiar al modo oscuro">Modo Oscuro</button>
+
+    <!-- Footer -->
+
+<footer class="bg-dark text-white text-center py-4" role="contentinfo">
+    <p>&copy; 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+    <div>
+       
+        <a href="https://facebook.com" target="_blank" class="text-white me-3" aria-label="Visitar Facebook de Gimnasio Fitness">
+            <i class="bi bi-facebook" aria-hidden="true"></i> Facebook
+        </a>
+        
+        <a href="https://instagram.com" target="_blank" class="text-white me-3" aria-label="Visitar Instagram de Gimnasio Fitness">
+            <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+        </a>
+        
+        <a href="https://twitter.com" target="_blank" class="text-white" aria-label="Visitar Twitter de Gimnasio Fitness">
+            <i class="bi bi-twitter" aria-hidden="true"></i> Twitter
+        </a>
+    </div>
+</footer>
+
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function changeFontSize(action) {
+            const body = document.body;
+            let currentFontSize = window.getComputedStyle(body).fontSize;
+            let newFontSize;
+    
+            // Obtener el tamaño actual y cambiarlo
+            currentFontSize = parseFloat(currentFontSize);
+            if (action === 'increase') {
+                newFontSize = currentFontSize * 1.1; // Aumentar un 10%
+            } else {
+                newFontSize = currentFontSize / 1.1; // Disminuir un 10%
+            }
+            body.style.fontSize = newFontSize + 'px';
+        }
+
+         // Recuperar la preferencia del usuario en el almacenamiento local (si existe)
+    const currentTheme = localStorage.getItem('theme');
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Función para cambiar al modo oscuro
+    function setDarkMode() {
+        body.classList.add('dark-mode');
+        themeToggleButton.classList.add('dark-mode');
+        themeToggleButton.textContent = 'Modo Claro';
+        localStorage.setItem('theme', 'dark');
+    }
+
+    // Función para cambiar al modo claro
+    function setLightMode() {
+        body.classList.remove('dark-mode');
+        themeToggleButton.classList.remove('dark-mode');
+        themeToggleButton.textContent = 'Modo Oscuro';
+        localStorage.setItem('theme', 'light');
+    }
+
+    // Inicializar el tema según la preferencia guardada
+    if (currentTheme === 'dark') {
+        setDarkMode();
+    } else {
+        setLightMode();
+    }
+
+    // Cambiar entre modos cuando el botón es presionado
+    themeToggleButton.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            setLightMode();
+        } else {
+            setDarkMode();
+        }
+    });
+    </script>
+</body>
+</html>

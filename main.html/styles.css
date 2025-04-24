@@ -1,0 +1,210 @@
+/* Cambiar el color de fondo del header a negro */
+.hero {
+    background-color: #000000 !important;
+}
+
+/* Modificar el color del texto en el header */
+.hero h1,
+.hero p {
+    color: white !important;/* este important quiere decir que a pesar de que abajo se modifique
+    este va a seguir teniendo la mayor especificidad*/
+}
+
+/* Estilo del botón en el header */
+.hero .btn {
+    background-color: #ea750f;
+    color: white;
+    border: none;
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #212529; /* Color oscuro para la barra de navegación */
+}
+
+.navbar a:hover {
+    color: red!important; /* Color de los enlaces al pasar el mouse */
+}
+
+/* Centrar los elementos dentro de la barra de navegación */
+#navbar-center {
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Alinea los elementos verticalmente */
+    width: 100%;              /* Asegura que ocupe todo el ancho disponible */
+    padding-left: 0;          /* Elimina el padding izquierdo predeterminado */
+    padding-right: 0;         /* Elimina el padding derecho predeterminado */
+}
+
+#navbar-center .nav-item {
+    margin-left: 15px;        /* Espaciado entre los elementos de navegación */
+    margin-right: 15px;       /* Espaciado entre los elementos de navegación */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: end; /* Para que los elementos de la lista se centren  aquiiiiiiiiiiii*/
+    width: 100%;              /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilo del carrusel */
+
+.containerC{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 700px;
+}
+
+/* Estilo de las tarjetas de los servicios */
+.card-title {
+    font-weight: bold;
+    
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Ajuste de márgenes y padding para un diseño más limpio */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hacer que todas las tarjetas estén en una sola fila */
+#servicios .row {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que las tarjetas se muevan a una nueva fila */
+    justify-content: space-between; /* Asegura que las tarjetas estén bien distribuidas */
+    gap: 15px; /* Espacio entre las tarjetas */
+}
+
+/* Hacer que cada tarjeta ocupe el 25% del ancho de la fila */
+#servicios .col-md-3 {
+    flex: 0 0 23%; /* Asegura que las tarjetas ocupen el 23% del contenedor, con un poco de espacio entre ellas */
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustar el estilo de las tarjetas */
+#servicios .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Asegura que las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro de la tarjeta estén apilados verticalmente */
+    justify-content: space-between; /* Alinea el contenido verticalmente */
+}
+
+/* Asegurarse de que las imágenes tengan el mismo tamaño y se ajusten */
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: 200px; /* Establece la altura de la imagen */
+    object-fit: cover; /* Recorta la imagen para que ocupe el área sin distorsionar */
+    margin-bottom: 15px; /* Espaciado entre la imagen y el contenido */
+}
+
+/* Estilo para el contenido dentro de la tarjeta (título, descripción y botón) */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Esto asegura que el contenido de la tarjeta ocupe el espacio restante */
+    padding: 15px;
+}
+
+/* Efecto de hover para las tarjetas */
+#servicios .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Asegura que los títulos y textos dentro de la tarjeta estén bien alineados */
+.card-title {
+    font-size: 1.25rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    text-align: center; /* Centra el título */
+}
+
+.card-text {
+    font-size: 1rem; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    flex-grow: 1; /* Hace que el texto ocupe el espacio restante */
+    margin-bottom: 20px; /* Espacio entre el texto y el botón */
+}
+
+/* Asegura que los botones estén centrados */
+.card-body .btn {
+    align-self: center;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    #servicios .col-md-3 {
+        flex: 0 0 100%; /* Hace que las tarjetas ocupen todo el ancho en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
+
+/* Estilos para el modo claro */
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.navbar.dark-mode {
+    background-color: #1c1c1c;
+}
+
+footer.dark-mode {
+    background-color: #232323;
+    color: white;
+}
+
+/* Estilo para el botón de alternar */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#theme-toggle.dark-mode {
+    background-color: #343a40;
+}
