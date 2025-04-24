@@ -194,9 +194,9 @@ footer.dark-mode {
 
 /* Estilo para el botón de alternar */
 #theme-toggle {
-    position: fixed;
+    position: relative;
     top: 20px;
-    right: 20px;
+    right: 0px;
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
